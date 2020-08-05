@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166.001" height="42.681" viewBox="0 0 166.001 42.681">
+  <g id="Group_26" data-name="Group 26" transform="translate(-318.999 -674.319)">
+    <g id="Group_22" data-name="Group 22" transform="translate(318.999 675)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="10.913" height="1.036" transform="translate(2.041 3.952)" fill="#fff"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="13.059" height="1.036" transform="translate(1.35 7.405)" fill="#fff"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="9.328" height="1.036" transform="translate(3.422 10.858)" fill="#fff"/>
+      <path id="Path_11" data-name="Path 11" d="M43.785,200.467c3.066-7.7,22.759-14.745,5.99-24.19" transform="translate(-42.545 -176.277)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M7.929,15.857A7.929,7.929,0,1,1,15.443,5.4L14.1,5.038a6.818,6.818,0,1,0-1.026,7.354l1.178.316A8.019,8.019,0,0,1,11.514,15,7.829,7.829,0,0,1,7.929,15.857Z" transform="translate(0 19.364)" fill="#fff"/>
+      <line id="Line_3" data-name="Line 3" x1="0.466" y2="3.26" transform="translate(14.739 26.83)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+    <text id="ig_Ideas_Lab" data-name="ig Ideas Lab" transform="translate(336 710)" fill="#fff" font-size="27" font-family="Raleway-Light, Raleway Light" font-weight="300" opacity="0.9"><tspan x="0" y="0">ig Ideas Lab</tspan></text>
+  </g>
+</svg>
