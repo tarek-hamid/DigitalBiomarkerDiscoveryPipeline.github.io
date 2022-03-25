@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    text-decoration: none;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar {
+    background: #fff;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    border-bottom: 3px solid #8d599f;
+}
+
+.logo {
+    cursor: pointer;
+    width: 10%;
+    height: auto;
+    background: #fff;
+}
+
+.home-button {
+    color: white;
+}
+
+.code_env_links {
+    background: #fff;
+    list-style: none;
+}
+
+.code_env_links li {
+    background: #fff;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.code_env_links li a {
+    background: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.code_env_links li a:hover {
+    color: mediumpurple
+}
+
+button {
+    padding: 9px 25px;
+    background-color: mediumpurple;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: mediumpurple;
+}
+
+.side-nav-wrapper .side-nav {
+    background: #fff;
+    position: fixed;
+    top: 20;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 30px 0;
+    transition: all 0.5s ease;
+    list-style: none;
+}
+
+
+.side-nav-wrapper .side-nav ul li a{
+    background: #fff;
+    display: block;
+    padding: 15% 10%;
+    border-bottom: 1px solid #ececec;
+}
+
+.side-nav-wrapper .side-nav ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: #8d599f;
+}
+
+.side-nav-wrapper .side-nav ul li a:hover{
+    color: #8d599f;
+}
+
+.side-nav-wrapper .side-nav ul li a:hover, 
+.side-nav-wrapper .side-nav ul li a:active{
+    color: #8d599f;
+    background: linear-gradient(to right, #fff, #f6edfc);
+}
+
+.item {
+    background: #fff;
+}
+
+.accordion {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.compile {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.compile-text {
+    background-color: mediumpurple;
+    color: white;
+}
+
+.compile-icon {
+    background-color: mediumpurple;
+    align-content: center;
+    color: white;
+}
