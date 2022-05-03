@@ -27,7 +27,7 @@ li, a, button {
     cursor: pointer;
     width: 10%;
     height: auto;
-    background: #fff;
+    ba
 }
 
 .home-button {
@@ -68,20 +68,20 @@ button:hover {
 }
 
 .side-nav-wrapper .side-nav {
-    background: #fff;
     position: fixed;
-    top: 20;
+    top: 5;
     left: 0;
     width: 225px;
     height: 100%;
     padding: 30px 0;
     transition: all 0.5s ease;
     list-style: none;
+    overflow-y: scroll;
+    padding-top: 0px;
 }
 
 
 .side-nav-wrapper .side-nav ul li a{
-    background: #fff;
     display: block;
     padding: 15% 10%;
     border-bottom: 1px solid #ececec;
@@ -107,10 +107,6 @@ button:hover {
     background: linear-gradient(to right, #fff, #f6edfc);
 }
 
-.item {
-    background: #fff;
-}
-
 .accordion {
     cursor: pointer;
     border: none;
@@ -118,12 +114,6 @@ button:hover {
     transition: 0.4s;
 }
   
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-  
-/* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
     display: none;
@@ -145,4 +135,29 @@ button:hover {
     background-color: mediumpurple;
     align-content: center;
     color: white;
+}
+
+.file-upload {
+    display: inline-block;
+    position: fixed;
+    margin: auto;
+    left: 20%;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    width: 300px;
+    height: 50px; 
+}
+
+.file-upload-txt {
+    color: black;
+    text-align: center;
+}
+
+.file-upload-button {
+    color: white;
+}
+
+canvas {
+    width: 1000px !important;
 }

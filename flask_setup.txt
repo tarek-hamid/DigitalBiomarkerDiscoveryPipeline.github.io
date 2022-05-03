@@ -1,0 +1,21 @@
+Instructions to run back-end Flask server locally
+
+Source: https://phoenixnap.com/kb/install-flask
+
+For any questions, please email Tarek Hamid - hamidtarek3@gmail.com
+
+
+Windows
+
+If you have already set-up previously, skip steps 1 and 2.
+1. Install  virtualenv: pip install virtualenv
+2. Create an environment: cd <project name>, then python3 -m venv <name of environment>
+3. Activate environment: <name of environment>\Scripts\activate
+	If successful, you'll see your environment name in the terminal command line on the left. 
+4. Set flask environment variable: setx FLASK_APP "application.py"
+	If successful, you'll receive a success message. 
+5. Run flask: flask run
+6. Your backend server is set-up! The server can now receive requests from the client.
+
+
+Common Errors:
