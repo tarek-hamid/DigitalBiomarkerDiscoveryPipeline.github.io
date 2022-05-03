@@ -36,14 +36,9 @@
             <div class="side-nav">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a onclick='showPreprocessBlock()' href="#">
                             <span class="icon"></span>
                             <span class="item accordion">Pre-processing</span>
-                            <div class="panel">
-                                <p>Option 1</p>
-                                <p>Option 2</p>
-                                <p>Option 3</p>
-                            </div>
                         </a>
                     </li>
                     <li>
@@ -129,20 +124,37 @@
         <div class="file-upload">
             <form class="form" id="myForm" action="http://localhost:5000/uploadData" target="dummyframe" method="POST" enctype = "multipart/form-data">
                 <input type="file" id="inpFile" name="inpFile" />
-                <button type="submit" id="submit">Upload File</button>
+                <button type="submit" id="submit" onclick="onFileUpload()"><ion-icon class="compile-icon" name="arrow-up-circle-outline"></ion-icon></button>
             </form>     
-            <button onclick="getData()">Check</button>
-            <br>
-            <span class="file-upload-txt">We support wearables data from Fitbit, Garmin, Apple, and Empatica.</span>
+            <span id="file-upload-text" class="file-upload-txt">We support wearables data from Fitbit, Garmin, Apple, and Empatica.</span>
         </div>
 
         <!-- Chart -->
-        <canvas id="chart"></canvas>
+        <div id="chartBox" class="chartBox">
+            <canvas id="chart"></canvas>
+        </div>
+        
+        <!-- Blocks -->
+        <div id="data-block" class="boxed data-block">
+            Data
+        </div>
+        <ion-icon id="block-arrow" class="block-arrow" name="arrow-down"></ion-icon>
+        <div id="second-block" class="boxed second-block">
+            Pre-processing
+        </div>
 
         <!--  Compile Button  -->
-        <form onsubmit="false" class="form" id="myForm" action="http://localhost:5000/preprocess" method="GET" enctype = "multipart/form-data" >
-            <button class="compile">
+        <form class="form" id="myForm" action="http://localhost:5000/preprocess" method="GET" enctype = "multipart/form-data" >
+            <button id="compile" class="compile">
                 <span class="compile-text">Compile</span>
+                <ion-icon class="compile-icon" name="arrow-forward-circle-outline"></ion-icon>
+            </button>
+        </form>
+
+        <!--  Download Button  -->
+        <form class="form" id="myForm" action="http://localhost:5000/download" target="dummyframe" method="GET" enctype = "multipart/form-data">
+            <button id="download" class="download">
+                <span class="compile-text">Download</span>
                 <ion-icon class="compile-icon" name="arrow-forward-circle-outline"></ion-icon>
             </button>
         </form>

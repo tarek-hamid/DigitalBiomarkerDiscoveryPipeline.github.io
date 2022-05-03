@@ -19,6 +19,7 @@ def uploadData():
 
 @app.route('/preprocess/', methods=['GET'])
 def preprocess():
+    
     filepath = 'output.csv'
 
     # Process data
@@ -36,6 +37,12 @@ def preprocess():
     df.to_csv(filepath)
     f.close()
     
+    return "Successfully pre-processed"
+
+@app.route('/download/', methods=['GET'])
+def download():
+    filepath = 'output.csv'
+    print("downloading data")
     return send_file(filepath, attachment_filename='output.csv')
 
 @app.route('/deleteSessionData/', methods=['POST'])

@@ -19,7 +19,7 @@ for (let i = 0; i < acc.length; i++) {
     });
 }
 
-// Creates chart
+// Graph figure
 drawChart();
 
 async function drawChart() {
@@ -29,7 +29,9 @@ async function drawChart() {
     datasets: [{
       label: 'Glucose',
       data: datapoints.glucoseData,
-      backgroundColor: 'rgba(160,32,240)',
+      borderColor: 'rgb(148,0,211)',
+      pointRadius: 0,
+      fill: false,
       borderWidth: 1
   }]};
   
@@ -37,11 +39,37 @@ async function drawChart() {
     type: 'line',
     data,
     options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      },
       scales: {
         y: {
-          beginAtZero: true
-        }
-      }
+          title: {
+            display: true,
+            text: 'Axis label'
+          }
+        },
+        xAxes: [{
+          title: {
+            display: true,
+            text: 'Label',
+          },
+          display: false, //this will remove all the x-axis grid lines
+          ticks: {
+              display: false //this will remove only the label
+          }
+        }],
+
+        yAxes: [{
+          title: {
+            display: true,
+            text: 'Glucose Value (mg/dL)'
+          }
+        }],
+      },
+      
     }
   };
 
@@ -52,7 +80,7 @@ async function drawChart() {
 
 }
 
-// Parses CSV
+// CSV Parser
 async function getData() {
   const labels = [];
   const glucoseData = [];
@@ -72,5 +100,43 @@ async function getData() {
   return { labels, glucoseData }
 }
 
+
+// Hidden elements onclick
+
+function onFileUpload() {
+
+  // Show hidden
+  var dataBlock = document.getElementById('data-block');
+  var chart = document.getElementById('chartBox');
+  var compileButton = document.getElementById('compile');
+  var downloadButton = document.getElementById('download');
+  
+  dataBlock.style.display  = 'block';
+  chart.style.display = 'block';
+  compileButton.style.display = 'block';
+  downloadButton.style.display = 'block';
+  
+  // Hide elements
+  var chooseFileBlock = document.getElementById('inpFile');
+  var submitButton = document.getElementById('submit');
+  var uploadText = document.getElementById('file-upload-text');
+
+  chooseFileBlock.style.display = 'none';
+  submitButton.style.display = 'none';
+  uploadText.style.display = 'none';
+}
+
+function showPreprocessBlock() {
+  var preprocessBlock = document.getElementById('second-block');
+  var blockArrow = document.getElementById('block-arrow');
+
+  preprocessBlock.style.display = 'block';
+  blockArrow.style.display = 'block';
+}
+
+function preventRefresh() {
+  event.preventDefault()
+
+}
 
 

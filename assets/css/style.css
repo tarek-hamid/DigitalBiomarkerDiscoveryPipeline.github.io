@@ -6,12 +6,17 @@
     text-decoration: none;
 }
 
+body, p {
+    background-color: #f5f6fa;
+}
+
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: black;
     text-decoration: none;
+    background-color: #f5f6fa;
 }
 
 .nav-bar {
@@ -27,7 +32,7 @@ li, a, button {
     cursor: pointer;
     width: 10%;
     height: auto;
-    ba
+    background-color: #f5f6fa;
 }
 
 .home-button {
@@ -35,18 +40,18 @@ li, a, button {
 }
 
 .code_env_links {
-    background: #fff;
+    background-color: #f5f6fa;
     list-style: none;
 }
 
 .code_env_links li {
-    background: #fff;
+    background-color: #f5f6fa;
     display: inline-block;
     padding: 0px 20px;
 }
 
 .code_env_links li a {
-    background: #fff;
+    background-color: #f5f6fa;
     transition: all 0.3s ease 0s;
 }
 
@@ -122,8 +127,16 @@ button:hover {
 
 .compile {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 225px;
+    right: 550px;
+    display: none;
+}
+
+.download {
+    position: fixed;
+    bottom: 225px;
+    right: 350px;
+    display: none;
 }
 
 .compile-text {
@@ -151,10 +164,68 @@ button:hover {
 
 .file-upload-txt {
     color: black;
-    text-align: center;
 }
 
 .file-upload-button {
     color: white;
 }
 
+#submit {
+    float: right;
+}
+
+.form {
+    overflow: hidden;
+    width: 300px;
+}
+
+.inpFile, .submit {
+    vertical-align: middle;
+}
+
+
+ion-icon {
+    font-size: 1.5rem;  
+}
+
+.chartBox {
+    width: 950px;
+    position: fixed;
+    top: 300px;
+    right: 100px;
+    display: none;
+}
+
+.boxed {
+    font-size: 32px;
+    display: inline-block;
+    height: 100px; 
+    padding-top: 20px;
+    padding-left: 60px; 
+    padding-right: 60px; 
+    line-height: 50px; 
+    left: 400px;
+    position: absolute;
+    background-color: lavender;
+    border-style: solid;
+    border-color: #8d599f;
+}
+
+.data-block {
+    top: 300px;
+    display: none;
+}
+
+.second-block {
+    top: 500px;
+    display: none;
+}
+
+.block-arrow {
+    font-size: 4rem;  
+    position: fixed;
+    top: 410px;
+    left: 460px;
+    color: #8d599f;
+    display: none;
+}
